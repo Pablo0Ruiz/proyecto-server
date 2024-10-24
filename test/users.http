@@ -1,0 +1,54 @@
+GET http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzE2NjcwNTIwNTcyOGYzYjA4OTBhZDkiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzI5NTIxNDI0LCJleHAiOjE3Mjk1Mjg2MjR9.4r8fwvHTqPHunu60Vgo6iU5k84x4ILo7XzmNmhSA8_s
+###
+GET http://localhost:3000/api/users/670551fe9cc305873d71f251 HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/users/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "noam pee",
+    "age": 24,
+    "email": "cco@gmail.com",
+    "password": "tu abuela",
+    "role": "user"
+}
+###
+
+PUT  http://localhost:3000/api/users/67055de47416b9adf8444560 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "noam selva",
+    "age": 22,
+    "email": "villero99@gmail.com",
+    "password": "999",
+    "role": "user"
+}
+
+###
+DELETE http://localhost:3000/api/users/67055dbe7416b9adf844455b HTTP/1.1
+
+###
+PATCH  http://localhost:3000/api/users/role/670fecfb93355e279a5132c9 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzBmYzUwYzFmODA4ZWY1ODQ0OTYzMmEiLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTcyOTA5Njk4MCwiZXhwIjoxNzI5MTA0MTgwfQ.oB2VpzGOJkOOcbZWXLRkacB9QPQQGw4HTMnBvlAUNrw
+
+{
+    "role": "admin"
+}
+
+
+###
+POST http://localhost:3000/api/users/mail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzE2NjcwNTIwNTcyOGYzYjA4OTBhZDkiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNzI5Nzc3ODQxLCJleHAiOjE3Mjk3ODUwNDF9.VSxl85uEDOWlDm3DTIAKpCGeCi7vuIlQIWrXzCigVos
+
+{
+    "subject":"hola papaa estoy funcionando ready",
+    "text":"prueba",
+    "to":"kenyi.ruiz.ceb@gmail.com"
+}
